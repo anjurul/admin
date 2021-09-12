@@ -299,9 +299,9 @@ class ClientReviewPage extends Component {
             const data = this.state.dataList;
             const columns=[
                 {dataField: 'id', text: 'ID'},
-                {dataField: 'client_img', text: 'IMAGE',formatter:this.ImgCellFormat},
-                {dataField: 'client_title', text: 'CLIENT NAME'},
-                {dataField: 'client_description', text: 'DESCRIPTION'},
+                {dataField: 'client_img', text: 'Image',formatter:this.ImgCellFormat},
+                {dataField: 'client_title', text: 'Name'},
+                {dataField: 'client_description', text: 'Description'},
                 // {
                 //     dataField: "follow",
                 //     text: "Follow",
@@ -346,11 +346,11 @@ class ClientReviewPage extends Component {
                                 </Form.Group>
                                 <Form.Group className="mb-3" >
                                     <Form.Label>Review Description</Form.Label>
-                                    <Form.Control onChange={this.desOnChange}  type="text" placeholder="Review Description" />
+                                    <Form.Control onChange={this.desOnChange} type="text" placeholder="Review Description" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" >
                                     <Form.Label>Review Image</Form.Label>
-                                    <Form.Control onChange={this.fileOnChange} n type="file"  />
+                                    <Form.Control onChange={this.fileOnChange} type="file"  />
                                 </Form.Group>
                                 <Button variant="primary" type="submit">
                                     Submit
@@ -376,11 +376,11 @@ class ClientReviewPage extends Component {
                                 
                                 <Form.Group className="mb-3" >
                                     <Form.Label>Review Title</Form.Label>
-                                    <Form.Control onChange={this.handleInput} name="title" value={this.editTitle} type="text"  />
+                                    <Form.Control onChange={this.handleInput} name="title" value={this.state.editTitle} type="text"  />
                                 </Form.Group>
                                 <Form.Group className="mb-3" >
                                     <Form.Label>Review Description</Form.Label>
-                                    <Form.Control onChange={this.handleInput} name="des" value={this.editDes} type="text"  />
+                                    <Form.Control onChange={this.handleInput} name="des" value={this.state.editDes} type="text"  />
                                 </Form.Group>
                                 <Form.Group className="mb-3" >
                                     <Form.Label>Review Image</Form.Label>

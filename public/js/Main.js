@@ -14537,14 +14537,14 @@ var ClientReviewPage = /*#__PURE__*/function (_Component) {
           text: 'ID'
         }, {
           dataField: 'client_img',
-          text: 'IMAGE',
+          text: 'Image',
           formatter: this.ImgCellFormat
         }, {
           dataField: 'client_title',
-          text: 'CLIENT NAME'
+          text: 'Name'
         }, {
           dataField: 'client_description',
-          text: 'DESCRIPTION'
+          text: 'Description'
         } // {
         //     dataField: "follow",
         //     text: "Follow",
@@ -14629,7 +14629,6 @@ var ClientReviewPage = /*#__PURE__*/function (_Component) {
                     children: "Review Image"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__.default.Control, {
                     onChange: this.fileOnChange,
-                    n: true,
                     type: "file"
                   })]
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_13__.default, {
@@ -14669,7 +14668,7 @@ var ClientReviewPage = /*#__PURE__*/function (_Component) {
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__.default.Control, {
                     onChange: this.handleInput,
                     name: "title",
-                    value: this.editTitle,
+                    value: this.state.editTitle,
                     type: "text"
                   })]
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__.default.Group, {
@@ -14679,7 +14678,7 @@ var ClientReviewPage = /*#__PURE__*/function (_Component) {
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__.default.Control, {
                     onChange: this.handleInput,
                     name: "des",
-                    value: this.editDes,
+                    value: this.state.editDes,
                     type: "text"
                   })]
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_12__.default.Group, {
